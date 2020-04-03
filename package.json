@@ -23,6 +23,7 @@
     "compile": "npm run compile:commonjs && npm run compile:umd && npm run compile:umdmin && npm run compile:es",
     "lint": "eslint src test",
     "prepublish": "npm run compile",
+    "precommit": ["build"],
     "test": "better-npm-run test",
     "test:cov": "better-npm-run test:cov",
     "test:typescript": "better-npm-run test:typescript"
